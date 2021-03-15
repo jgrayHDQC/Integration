@@ -1,0 +1,128 @@
+{\rtf1\ansi\ansicpg1252\cocoartf2513
+\cocoatextscaling0\cocoaplatform0{\fonttbl\f0\fswiss\fcharset0 Helvetica;}
+{\colortbl;\red255\green255\blue255;}
+{\*\expandedcolortbl;;}
+\margl1440\margr1440\vieww10800\viewh8400\viewkind0
+\pard\tx720\tx1440\tx2160\tx2880\tx3600\tx4320\tx5040\tx5760\tx6480\tx7200\tx7920\tx8640\pardirnatural\partightenfactor0
+
+\f0\fs24 \cf0 <apex:component access="global">\
+  <apex:attribute name="hdmsPhoneNum" description="HDMS phone number" type="String" />\
+  <apex:attribute name="hdmsPhoneCopy" description="HDMS phone Copy" type="String" />\
+  <apex:attribute name="buttonCopy" description="CTA button copy" type="String"/>\
+  <apex:attribute name="buttonURL" description="CTA button URL" type="String"/>\
+  <apex:attribute name="bodyCopy" description="Body copy" type="String"/>\
+  <apex:attribute name="userChoice" description="choice of reschedule or details" type="String"/>\
+  <apex:attribute name="textNum" description="TEXT TO number" type="String" />\
+  <apex:attribute name="iconImagePath" description="URL of icon image" type="String" />\
+  <apex:attribute name="storeNum" description="Store number" type="String" />\
+  <apex:attribute name="storeName" description="Store name" type="String" />\
+  <apex:attribute name="storeStreet" description="Store street address" type="String" />\
+  <apex:attribute name="storeCity" description="Store city" type="String" />\
+  <apex:attribute name="storeState" description="Store state" type="String" />\
+  <apex:attribute name="storeZip" description="Store zip" type="String" />\
+  <apex:attribute name="storePhone" description="Store phone number" type="String" />\
+\
+    <!-- Component Definition -->    \
+  <div class="hues-1">\
+            <table class="width-1" style="text-align: left;width:700px;max-width:700px" role="presentation">\
+                <tr class="row-7">\
+                    <th class="column" valign="top">\
+\
+                        <table class="titles_2col">\
+                            <tr>\
+                                <td class="border-title-left">Get&nbsp;In&nbsp;Touch</td>\
+                                <td class="">&nbsp;</td>\
+                            </tr>\
+                            <tr>\
+                                <td class=""><hr class="orange-border" /></td>\
+                                <td class="" valign="center"><hr class="grey-border" /></td>\
+                            </tr>\
+                            <tr>\
+                                <td colspan="2" class="body-copy">\
+                                    <span class="bold-700">Home Depot Flooring Center:</span><br/><a href="tel:\{!hdmsPhoneNum\}" class="a2">\{!hdmsPhoneCopy\}</a><br/><br/>\
+                                    Call us to reschedule your appointment or confirm your product.<br/>\
+\
+                                    <div class="show-for-small">\
+                                    <!-- gray box button -->\
+                                    <div class="btn-1" style="margin: 20px 0 20px">\
+                                        <!--[if mso]><v:rect style="width: 260px; height: 80px; v-text-anchor: middle;" arcsize="200%" strokecolor="#000000" fillcolor="#595959" strokeweight="1pt">\
+                                        <center><![endif]-->\
+                                        <a href="\{!buttonURL\}">\
+                                            <span class="btn" style="width: 260px; max-width: 260px; background-color: #595959; border-bottom:2px solid black;">\
+                                                <span class="btn-text" style="height: 50px; line-height: 125%; "><apex:outputText escape="false" value="\{!buttonCopy\}" /></span>\
+                                            </span>\
+                                        </a>\
+                                        <!--[if mso]></center></v:rect><![endif]-->\
+                                    </div>\
+\
+                                    <apex:outputText escape="false" value="\{!bodyCopy\}" /><br/>\
+                                </div>\
+\
+                                </td>\
+                            </tr>\
+                        </table>\
+\
+                        <div class="height-2" aria-hidden="true">&nbsp;</div>\
+\
+                    </th>\
+                    <th class="column" valign="top">\
+\
+                        <table class="titles_2col">\
+                            <tr>\
+                                <td class="border-title-left">Your&nbsp;Store</td>\
+                                <td class="">&nbsp;</td>\
+                            </tr>\
+                            <tr>\
+                                <td class=""><hr class="orange-border" /></td>\
+                                <td class="" valign="center"><hr class="grey-border" /></td>\
+                            </tr>\
+                        </table>\
+                        <!-- <div class="height-05" aria-hidden="true">&nbsp;</div> -->\
+                        <!-- end sub component -->\
+\
+                        <!-- sub component -->\
+                        <table class="next-steps-list">\
+                            <tr>\
+                                <td class="value-props-icon" valign="top"><img class="steps-number" src="\{!iconImagePath\}" width="30" style="max-width: 30px;" alt="Your Store" /></td>\
+                                <td class="next-steps-li" style="padding-bottom:5px;"><strong>\{!storeName\}</strong> </td>\
+                            </tr>\
+                            <tr>\
+                                <td colspan="2" class="body-copy">\
+                                    \{!storeStreet\}<br/>\
+                                    \{!storeCity\}, \{!storeState\} \{!storeZip\}<br/>\
+                                    \{!storePhone\}\
+                                </td>\
+                            </tr>\
+                        </table>\
+\
+                    <!--    <div class="height-05" aria-hidden="true">&nbsp;</div> -->\
+\
+                    </th>\
+                </tr>\
+                <tr>\
+                    <td colspan="2" class="body-copy">\
+\
+                        <div class="hide-for-small">\
+                        <!-- gray box button -->\
+                        <div class="btn-1" style="margin: 20px 0 20px">\
+                            <!--[if mso]><v:rect style="width: 260px; height: 80px; v-text-anchor: middle;" arcsize="200%" strokecolor="#000000" fillcolor="#595959" strokeweight="1pt">\
+                            <center><![endif]-->\
+                            <a href="\{!buttonURL\}">\
+                                <span class="btn" style="width: 260px; max-width: 260px; background-color: #595959; border-bottom:2px solid black;">\
+                                    <span class="btn-text" style="height: 50px; line-height: 125%; ">Add us to your contacts</span>\
+                                </span>\
+                            </a>\
+                            <!--[if mso]></center></v:rect><![endif]-->\
+                        </div>\
+\
+                        \{!bodyCopy\}<br/>\
+                    </div>\
+\
+                    <div class="height-3" aria-hidden="true">&nbsp;</div>\
+\
+                    </td>\
+                </tr>\
+            </table>\
+        </div>\
+\
+</apex:component>}

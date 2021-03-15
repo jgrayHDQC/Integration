@@ -1,0 +1,86 @@
+{\rtf1\ansi\ansicpg1252\cocoartf2513
+\cocoatextscaling0\cocoaplatform0{\fonttbl\f0\fswiss\fcharset0 Helvetica;}
+{\colortbl;\red255\green255\blue255;}
+{\*\expandedcolortbl;;}
+\margl1440\margr1440\vieww10800\viewh8400\viewkind0
+\pard\tx720\tx1440\tx2160\tx2880\tx3600\tx4320\tx5040\tx5760\tx6480\tx7200\tx7920\tx8640\pardirnatural\partightenfactor0
+
+\f0\fs24 \cf0 <apex:component controller="HDMSQuoteDetailsEmailCtrl" access="global">\
+  <apex:attribute name="headlineCopy" description="Headline copy" type="String" />\
+  <apex:attribute name="measureDate" description="Measure date" type="DateTime" />\
+  <apex:attribute name="measureCost" description="Measure Cost" type="String" />\
+  <apex:attribute name="measureNum" description="Measure number" type="String" />\
+  <apex:attribute name="measureAddress" description="Measure Address" type="String" />\
+  <apex:attribute name="orderNum" description="Order number" type="String" />\
+  <apex:attribute name="materialType" description="Material type" type="String" />\
+  <apex:attribute name="custFirstName" description="Customer first name" type="String" />\
+  <apex:attribute name="custLastName" description="Customer last name" type="String" />\
+  <apex:attribute name="custStreet" description="Customer street address" type="String" />\
+  <apex:attribute name="custCity" description="Customer city" type="String" />\
+  <apex:attribute name="custZip" description="Customer zip" type="String" />\
+  <apex:attribute name="custEmail" description="Customer email address" type="String" />\
+  <apex:attribute name="custPhone" description="Customer phone number" type="String" />\
+  \
+\
+  \
+    <!-- Component Definition -->    \
+        <div class="hues-1">\
+            <table class="width-1" style="text-align: left;width:700px;max-width:700px" role="presentation">\
+                <tr class="row-7">\
+                    <th class="column" valign="top">\
+\
+                        <table class="titles_2col">\
+                            <tr>\
+                                <td class="border-title-left">Appointment&nbsp;Details</td>\
+                                <td class="">&nbsp;</td>\
+                            </tr>\
+                            <tr>\
+                                <td class=""><hr class="orange-border" /></td>\
+                                <td class="" valign="center"><hr class="grey-border" /></td>\
+                            </tr>\
+                            <tr>\
+                                <td colspan="2" class="">\
+                                    <span class="bold-700">Measure Date:</span>&nbsp;<apex:outputText value="\{0,date,MMM' 'dd', 'yyyy\}" > <apex:Param value="\{!measureDate\}" /></apex:OutputText><br/>\
+                                    <span class="bold-700">Measure Address:</span> \{!measureAddress\}<br/>\
+                                    <span class="bold-700">Measure Number: #</span>\{!measureNum\}<br/>\
+                                    <span class="bold-700">Order Number: #</span>\{!orderNum\}<br/><br/>\
+                                    <span class="bold-700">Paid: $</span>\{!measureCost\}<br/> \
+                                   <!-- <span class="bold-700">Paid:</span> <apex:outputText value="\{0, number, currency\}" ><apex:param value="\{!ABS(relatedTo.CreditMeasurePrice__c)\}" /></apex:outputText><br/>-->\
+                                    <!-- <apex:outputText value="\{0, number, currency\}" ><apex:param value="\{!ABS(relatedTo.CreditMeasurePrice__c)\}" /></apex:outputText> -->\
+                                    <span class="bold-700">Material: </span><c:hdmsLeadFloorType ldId="\{!materialType\}"></c:hdmsLeadFloorType>\
+                                     <!-- <c:hdmsLeadFloorType ldId="\{!relatedTo.id\}"></c:hdmsLeadFloorType> -->\
+                                </td>\
+                            </tr>\
+                        </table>\
+\
+                        <div class="height-2" aria-hidden="true">&nbsp;</div>\
+\
+                    </th>\
+                    <th class="column" valign="top">\
+\
+                        <table class="titles_2col">\
+                            <tr>\
+                                <td class="border-title-left">Your&nbsp;Information</td>\
+                                <td class="">&nbsp;</td>\
+                            </tr>\
+                            <tr>\
+                                <td class=""><hr class="orange-border" /></td>\
+                                <td class="" valign="center"><hr class="grey-border" /></td>\
+                            </tr>\
+                            <tr>\
+                                <td colspan="2" class="body-copy">\
+                                    <span class="bold-700">Name:</span> \{!custFirstName\} \{!custLastName\}<br/>\
+                                    <span class="bold-700">Email:</span> \{!custEmail\}<br/>\
+                                    <span class="bold-700">Phone Number:</span> \{!custPhone\}\
+                                </td>\
+                            </tr>\
+                        </table>\
+\
+                        <div class="height-3" aria-hidden="true">&nbsp;</div>\
+\
+                    </th>\
+                </tr>\
+            </table>\
+        </div>\
+\
+</apex:component>}

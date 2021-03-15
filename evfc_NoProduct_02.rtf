@@ -1,0 +1,133 @@
+{\rtf1\ansi\ansicpg1252\cocoartf2513
+\cocoatextscaling0\cocoaplatform0{\fonttbl\f0\fswiss\fcharset0 Helvetica;}
+{\colortbl;\red255\green255\blue255;}
+{\*\expandedcolortbl;;}
+\margl1440\margr1440\vieww10800\viewh8400\viewkind0
+\pard\tx720\tx1440\tx2160\tx2880\tx3600\tx4320\tx5040\tx5760\tx6480\tx7200\tx7920\tx8640\pardirnatural\partightenfactor0
+
+\f0\fs24 \cf0 <apex:component controller="HDMSQuoteDetailsEmailCtrl" access="global" >\
+  <apex:attribute name="productChoice" description="Product info, text content" type="String" />\
+  <apex:attribute name="phoneNumber" description="Phone number" type="String" />\
+  <apex:attribute name="selectionPhoneNum" description="No Product Image ALT text" type="String" />\
+  <apex:attribute name="custFirstName" description="First name" type="String" />\
+  <apex:attribute name="buttonURL" description="Button URL" type="String" />\
+  <apex:attribute name="buttonCopy" description="Button copy" type="String" />\
+  <apex:attribute name="iconURL" description="Lightbulb icon URL" type="String" />\
+  <apex:attribute name="noProd1URL" description="No Product Image URL 1" type="String" />\
+  <apex:attribute name="noProd2URL" description="No Product Image URL 2" type="String" />\
+  <apex:attribute name="noProd3URL" description="No Product Image URL 3" type="String" />\
+  <apex:attribute name="noProd1ALT" description="No Product Image1 ALT text" type="String" />\
+  <apex:attribute name="noProd2ALT" description="No Product Image2 ALT text" type="String" />\
+  <apex:attribute name="noProd3ALT" description="No Product Image3 ALT text" type="String" />\
+\
+    <!-- Component Definition -->    \
+    <!--[if !mso]><!--><div id="" class="hues-2" style=""><!--<![endif]-->\
+    <!--[if mso]><table class="" style="background-color:#f2f2f2;"><tr><td><![endif]-->\
+   <!-- <div id="" class="hues-2 no-product" style="background-color:#f2f2f2;"> -->\
+    <table class="width-5" style="text-align: left;width:700px;max-width:700px;" role="presentation">\
+        <tr class="row-7">\
+            <td class="value-props-icon" valign="top" style="padding:25px 10px 0px 15px;"><img class="steps-number" src="\{!iconURL\}" width="30" style="max-width: 30px;" alt="Cart" /></td>\
+            <td style="padding:25px 15px 0px 0px;"><span class="greeting-title" >\{!custFirstName\}, you haven&rsquo;t selected your floors yet!</span></td>\
+        </tr>\
+        <tr class="row-7">\
+            <td colspan="2" style="padding:0px 15px 0px 15px;">\
+                <div class="height-05" aria-hidden="true">&nbsp;</div>\
+                <span class="greeting-copy" style="">Choose your flooring product to receive your quote.</span>\
+            </td>\
+        </tr>\
+    </table>\
+\
+    <center>\
+    <div class="height-05" aria-hidden="true" style="background-color:#f2f2f2;width:700px;max-width:700px;">&nbsp;</div>\
+    </center>\
+\
+    <table class="width-5" style="text-align: left;width:700px;max-width:700px;" role="presentation">\
+        <tr class="row-7">\
+            <th class="column" valign="top" style="padding:0px 0px 0px 15px;">\
+\
+                <div class="height-05" aria-hidden="true">&nbsp;</div>\
+\
+                <table class="gray_titles_2col">\
+                    <tr>\
+                        <td class="" valign="top">\
+\
+                            <!-- orange box button -->\
+                            <div class="btn-1" style="margin: 0px 0 10px">\
+                                <!--[if mso]><v:rect style="width: 260px; height: 80px; v-text-anchor: middle;" arcsize="200%" strokecolor="#c76929" fillcolor="#F96302" strokeweight="1pt">\
+                                <center><![endif]-->\
+                                <a href="\{!buttonURL\}">\
+                                    <span class="btn" style="width: 260px; max-width: 260px; background-color: #F96302; border-bottom:2px solid #c76929;">\
+                                        <span class="btn-text" style="height: 50px; line-height: 125%; "><apex:outputText escape="false" value="\{!buttonCopy\}" /> </span>\
+                                    </span>\
+                                </a>\
+                                <!--[if mso]></center></v:rect><![endif]-->\
+                            </div>\
+\
+                            <span style="font-size:12px;">Or select your floors at your local store.</span>\
+\
+                        </td>\
+                    </tr>\
+                </table>\
+\
+\
+            </th>\
+            <th class="column" valign="top" style="padding:0px 0px 0px 15px;">\
+\
+                <div class="height-05" aria-hidden="true">&nbsp;</div>\
+\
+                <table class="titles_2col" >\
+                    <tr>\
+                        <td class="credit-copy" valign="top">\
+                            Then, call to give us your selection:<br/>\
+                            <a href="tel:18002488982" class="a2">1-800-248-8982, Action #1</a>\
+                        </td>\
+                    </tr>\
+                </table>\
+\
+                <div class="height-2 hide-for-small" aria-hidden="true">&nbsp;</div>\
+\
+            </th>\
+        </tr>\
+    </table>\
+\
+    <center>\
+    <div class="height-05" aria-hidden="true" style="background-color:#f2f2f2;width:700px;max-width:700px;">&nbsp;</div>\
+    </center>\
+    \
+    <table class="width-5" style="text-align: left;width:700px;max-width:700px;" role="presentation">\
+        <tr class="row-7">\
+            <td class="column small-6" valign="top" style="padding:0px 0px 0px 15px;">\
+\
+                <div class="height-05" aria-hidden="true">&nbsp;</div>\
+                <img class="" src="\{!noProd1URL\}" width="215" style="max-width: 215px;" alt="\{!noProd1ALT\}" />\
+\
+            </td>\
+            <td class="column small-6" valign="top" align="middle">\
+\
+                <div class="np-middle" style="padding:0px 10px;">\
+                    <div class="height-05" aria-hidden="true">&nbsp;</div>\
+                    <img class="" src="\{!noProd2URL\}" width="215" style="max-width: 215px;" alt="\{!noProd2ALT\}" />\
+                </div>\
+            </td>\
+            <td class="column hide-for-small" valign="top" align="right" style="padding:0px 15px 0px 0px;">\
+\
+                <div class="height-05" aria-hidden="true">&nbsp;</div>\
+                <img class="" src="\{!noProd3URL\}" width="215" style="max-width: 215px;" alt="\{!noProd3ALT\}" />\
+\
+            </td>\
+        </tr>\
+    </table>\
+    <table class="width-5" style="text-align: left;width:700px;max-width:700px;" role="presentation">\
+        <tr class="row-7">\
+            <td class="column"  style="padding:0px;">\
+                <div class="height-05" aria-hidden="true">&nbsp;</div>\
+            </td>\
+        </tr>\
+    </table>\
+\
+<!-- </div> -->\
+<!--[if !mso]><!--></div><!--<![endif]-->\
+<!--[if mso]></td></tr></table><br/><![endif]-->\
+<div class="height-1" aria-hidden="true">&nbsp;</div>\
+\
+</apex:component>}
