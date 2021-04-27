@@ -1,0 +1,67 @@
+{\rtf1\ansi\ansicpg1252\cocoartf2513
+\cocoatextscaling0\cocoaplatform0{\fonttbl\f0\fmodern\fcharset0 CourierNewPSMT;}
+{\colortbl;\red255\green255\blue255;\red26\green26\blue26;\red255\green255\blue255;\red0\green0\blue0;
+}
+{\*\expandedcolortbl;;\cssrgb\c13333\c13333\c13333;\cssrgb\c100000\c100000\c100000;\cssrgb\c0\c0\c0;
+}
+\margl1440\margr1440\vieww10800\viewh8400\viewkind0
+\deftab720
+\pard\pardeftab720\partightenfactor0
+
+\f0\fs24 \cf2 \cb3 \expnd0\expndtw0\kerning0
+<apex:component controller="HDMSQuoteDetailsEmailCtrl" access="global" >\
+  <apex:attribute name="phoneNumber" description="Phone number" type="String" />\
+  <apex:attribute name="iconURL" description="Lightbulb icon URL" type="String" />\
+  <apex:attribute name="hero1URL" description="No Product Image URL 1" type="String" />\
+  <apex:attribute name="hero1ALT" description="No Product Image1 ALT text" type="String" />\
+\
+\
+    <!-- Component Definition -->    \
+    <!--[if !mso]><!--><div id="" class="hues-2" style=""><!--<![endif]-->\
+    <!--[if mso]><table class="" style="background-color:#f2f2f2;"><tr><td><![endif]-->\
+   <!-- <div id="" class="hues-2 no-product" style="background-color:#f2f2f2;"> -->\
+   \
+   <div class="hues-2">\
+        <table class="stack" style="width:700px; max-width:700px; padding-top: 0px;" role="presentation" >\
+            <tr class="row-7">\
+            <!-- end VP row OPEN -->\
+            \
+            <th class="column-first coupon-left" style="vertical-align: top; text-align: left; padding-bottom: 5px; " valign="top" width="49%">\
+                <table class="" style="">\
+                    <tr>\
+                        <td class="great-deal-right" style="padding:15px 0px 0px 15px;" align="left"><img class="" src="\{!hero1URL\}" width="330" style="max-width: 330px;" alt="\{!hero1ALT\}" /></td>\
+                    </tr>\
+                </table>\
+            </th>\
+            \
+            <th class="column-last coupon-right" style="vertical-align: top; text-align: left;" valign="top" width="49%">\
+                \
+                \
+                <table class="value-props-list">\
+                    <tr>\
+                        <td class="value-props-icon" valign="top" style="padding:15px 0px 10px 15px;"><img class="" src="\{!$Label.CX_LibraryCallNowIcon\}" width="300" style="max-width: 300px;" alt="Call Now" /></td>\
+                    </tr>\
+                    <tr>\
+                        <td class="vp-list-copy" style="padding:0px 0px 10px 15px;">to receive your quote:</td>\
+                    </tr>\
+                    <tr>\
+                        <td class="" style="padding:0px 0px 0px 15px;"><a href="tel:\{!phoneNumber\}" class="a2">\{!phoneNumber\}</a></td>\
+                    </tr>\
+                </table>\
+           <!--     <div class="height-1" aria-hidden="true">&nbsp;</div> -->\
+                \
+            </th>\
+            \
+    <!-- start VP row CLOSE -->\
+            </tr>\
+        </table><!-- .stack-reverse -->\
+    </div>\
+    <!-- end VP row CLOSE -->\
+\
+\
+<!-- </div> -->\
+<!--[if !mso]><!--></div><!--<![endif]-->\
+<!--[if mso]></td></tr></table><br/><![endif]-->\
+<div class="height-1" aria-hidden="true">&nbsp;</div>\
+\
+</apex:component>}

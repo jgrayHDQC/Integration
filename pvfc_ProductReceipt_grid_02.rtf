@@ -1,0 +1,149 @@
+{\rtf1\ansi\ansicpg1252\cocoartf2513
+\cocoatextscaling0\cocoaplatform0{\fonttbl\f0\fmodern\fcharset0 CourierNewPSMT;}
+{\colortbl;\red255\green255\blue255;\red26\green26\blue26;\red255\green255\blue255;\red0\green0\blue0;
+}
+{\*\expandedcolortbl;;\cssrgb\c13333\c13333\c13333;\cssrgb\c100000\c100000\c100000;\cssrgb\c0\c0\c0;
+}
+\margl1440\margr1440\vieww10800\viewh8400\viewkind0
+\deftab720
+\pard\pardeftab720\partightenfactor0
+
+\f0\fs24 \cf2 \cb3 \expnd0\expndtw0\kerning0
+<apex:component controller="HDMSCommunityQuoteCtrl"  access="global" >\
+<apex:attribute name="quoteNbr" type="String" description="Id of the quote" assignTo="\{!quoteNumber\}"/> \
+ <!-- <apex:attribute name="buttonURL" description="Floor plan URL" type="String" />\
+  <apex:attribute name="buttonCopy" description="CTA button copy" type="String" />\
+  <apex:attribute name="phoneNumber" description="Flooring Center phone number" type="String" />\
+  <apex:attribute name="quoteNbr" type="String" description="Id of the quote" assignTo="\{!quoteNumber\}"/> \
+    <apex:attribute name="hdmsGrandTotal" description="grand total" type="String" assignTo="\{!grandTotal\}"/> -->\
+    \
+    <apex:attribute name="measureID" description="Measure Number" type="String" />\
+    <apex:attribute name="quoteID" description="Quote Number" type="String" />\
+\
+  <style>\
+      .ftLines \{border: 0px solid #EEEEEE; padding:3px; background-color:#EEEEEE; font-size:11px !important; line-height:125%; \} \
+      .tdine \{background-color:white; font-size:11px !important; \} \
+      .ftTotal \{border: 1px solid white; background-color: white; font-size:11px !important; \} \
+      .bLine \{border-bottom:2px #b3b3b3 solid; font-weight:bold; font-size:11px !important; line-height:125%; padding-bottom:5px; padding-top: 5px; \} \
+      .bLineLight \{border-bottom:1px #e6e6e6 solid; font-weight:bold; font-size:11px !important; padding:0px 0px 5px 0px; \} \
+      .dataReturns \{font-size:11px !important; line-height:145%; color: #a6a6a6; padding:4px 0px; \} \
+\
+      #quoteGrid \{font-family: 'Open Sans', Helvetica, sans-serif; \} \
+\
+      .receiptCopy \{font-size:14px; line-height:145%; padding:5px 0px;color: #858585;\}\
+      .firstTitle \{font-size:14px; line-height:145%; font-weight:800; padding:5px 0px;color: #858585;\} \
+      .secondTitle \{font-size:14px; line-height:145%; font-weight:bold; padding:5px 0px; \} \
+      .thirdTitle\{font-size:16px; line-height:145%; font-weight:bold; padding:5px 0px; \}\
+      .fourthTitle\{font-size:18px; line-height:145%; font-weight:bold; padding:5px 0px; \} \
+      .receiptLegal \{font-size:11px; line-height:145%; padding:5px 0px;color: #858585;\}\
+    </style>\
+\
+  <style>\
+        .great-deal-orange \{color:#f96302; font-size:30px;font-weight:800;\}\
+    </style>\
+    <!-- Component Definition -->    \
+  <div class="hues-1 width-2" id="quoteGrid">\
+       \
+      <apex:repeat value="\{!QuoteDetails.floorTypeWrapperList\}" var="item" >\
+         <table width="100%" border="0" cellspacing="0">\
+              <tr bgcolor="#ffffff">\
+                <td colspan="3" class="ftLines" align="center">\
+                            Material for Floor Surface 1: \{!item.floorType\}<br />\
+                            Areas: \{!item.roomTypes\}\
+                        <br />\
+                </td>\
+            </tr>\
+             <tr bgcolor="#ffffff">\
+                <th class="bLine" width="8%">QTY</th>\
+                <th class="bLine" width="8%">Unit</th>\
+                <th class="bLine" width="84"><div align="left">Description</div></th>\
+            </tr>\
+          <apex:repeat value="\{!item.laborQLIListWrapper\}" var="item">\
+              <tr bgcolor="#ffffff">\
+                <th class="bLine" width="8%">\{!item.Quantity\}</th>\
+                <th class="bLine" width="8%">$\{!item.UnitPrice\}</th>\
+                <th class="bLine" width="84"><div align="left"><apex:outputText value="\{!item.lineItemDescription\}" escape="false"/></div></th>\
+            </tr>\
+          </apex:repeat>\
+          <tr>\
+                <td colspan="2" align="right" class="bLineLight"><b>Material Total</b></td>\
+                <td class="bLineLight" align="right">$\{!item.materialSubTotal\}</td>\
+            </tr>\
+          </table>\
+      </apex:repeat>\
+      \
+      <apex:repeat value="\{!QuoteDetails.floorTypeWrapperList\}" var="item" >\
+         <table width="100%" border="0" cellspacing="0">\
+              <tr bgcolor="#ffffff">\
+                <td colspan="3" class="ftLines" align="center">\
+                            Labor for Floor Surface 1: \{!item.floorType\}<br />\
+                            Areas: \{!item.roomTypes\}\
+                        <br />\
+                </td>\
+            </tr>\
+             <tr bgcolor="#ffffff">\
+                <th class="bLine" width="8%">QTY</th>\
+                <th class="bLine" width="8%">Unit</th>\
+                <th class="bLine" width="84"><div align="left">Description</div></th>\
+            </tr>\
+          <apex:repeat value="\{!item.laborQLIListWrapper\}" var="item2">\
+              <tr bgcolor="#ffffff">\
+                <th class="bLine" width="8%">\{!item2.Quantity\}</th>\
+                <th class="bLine" width="8%">$\{!item2.UnitPrice\}</th>\
+                <th class="bLine" width="84"><div align="left"><apex:outputText value="\{!item2.lineItemDescription\}" escape="false"/></div></th>\
+            </tr>\
+          </apex:repeat>\
+          <tr>\
+                <td colspan="2" align="right" class="bLineLight"><b>Material Total</b></td>\
+                <td class="bLineLight" align="right">$\{!item.laborSubTotal\}</td>\
+            </tr>\
+          </table>\
+      </apex:repeat>\
+          \
+      <table class="width-5" style="width:700px; max-width:700px;" >   \
+         <tr>\
+        <td colspan="5" bgcolor="#EEEEEE" class="ftLines">Order Summary - Measure #\{measureID\}, Quote #\{!quoteID\}</td>\
+    </tr>\
+\
+    <tr bgcolor="#ffffff">\
+        <th width="8%" class="bLine">Floor #</th>\
+        <th width="34%" class="bLine">Areas</th>\
+        <th width="18%" class="bLine">Material Cost</th>\
+        <th width="22%" class="bLine">Labor Cost</th>\
+        <th width="18%" class="bLine">Line Total</th>\
+    </tr>\
+ <apex:repeat value="\{!QuoteDetails.floorTypeWrapperList\}" var="item" >\
+    <tr align="right">\
+        <td><div align="center" class="dataReturns">1</div></td>\
+        <td><div align="center" class="dataReturns">M/BED,LR,UP HALL,BED2(Left corner)</div></td>\
+        <td><div align="center" class="dataReturns">$\{!item.materialLineItemTotal\}</div></td>\
+        <td><div align="center" class="dataReturns">$\{!item.laborLineItemTotal\}</div></td>\
+        <td><div align="center" class="dataReturns"><span style="font-weight:700;color:#7d7d7d">$5,736.54</span></div></td>\
+    </tr>\
+</apex:repeat>\
+    <tr>\
+        <td colspan="4" align="right" class="secondTitle"><span style="font-weight:700px;">SubTotal:</span></td>\
+        <td align="right" class="secondTitle"><span style="font-weight:700px;">$\{!QuoteDetails.subTotal\}</span></td>\
+    </tr>\
+    <apex:repeat value="\{!QuoteDetails.quoteLineItemsWrappers\}" var="item4"> \
+    <tr>\
+        <td colspan="4" align="right" class="secondTitle"><span style="font-weight:700px;">Coupon for Credit for Deposit/Measure: <br/>\
+        Coupon Code: ** need cupon code field **</span></td>\
+        <td align="right" class="secondTitle"><span style="font-weight:700px;">-$\{!QuoteDetails.creditForDeposit\}</span></td>\
+    </tr>\
+    </apex:repeat>\
+ <!--   <tr>\
+        <td colspan="4" align="right" class="secondTitle"><span style="font-weight:700px;">Tax @ 8.7 %</span></td>\
+        <td align="right" class="secondTitle"><span style="font-weight:700px;">$494.73</span></td>\
+    </tr> -->\
+    <tr>\
+        <td colspan="4" align="right" class="thirdTitle"><span style="font-weight:700px;">TOTAL</span></td>\
+        <td align="right" class="thirdTitle"><span style="font-weight:700px;">$\{!QuoteDetails.grandTotal\}</span></td>\
+    </tr>\
+</table> \
+          \
+<div class="height-3" aria-hidden="true">&nbsp;</div> \
+ \
+    </div>\
+\
+</apex:component>}
