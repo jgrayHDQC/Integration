@@ -1,9 +1,7 @@
 {\rtf1\ansi\ansicpg1252\cocoartf2513
 \cocoatextscaling0\cocoaplatform0{\fonttbl\f0\fmodern\fcharset0 CourierNewPSMT;}
-{\colortbl;\red255\green255\blue255;\red26\green26\blue26;\red255\green255\blue255;\red0\green0\blue0;
-}
-{\*\expandedcolortbl;;\cssrgb\c13333\c13333\c13333;\cssrgb\c100000\c100000\c100000;\cssrgb\c0\c0\c0;
-}
+{\colortbl;\red255\green255\blue255;\red26\green26\blue26;\red255\green255\blue255;}
+{\*\expandedcolortbl;;\cssrgb\c13333\c13333\c13333;\cssrgb\c100000\c100000\c100000;}
 \margl1440\margr1440\vieww10800\viewh8400\viewkind0
 \deftab720
 \pard\pardeftab720\partightenfactor0
@@ -15,7 +13,7 @@
 <!-- @details | Cascadia | Donuts 4.3 | 2020.05.31 | Segarsville, TX -->\
 <!-- @modification for THD: HDMS | v.02 | 2021.1.28 -->\
 <!-- @methods -->\
-<!-- Normalize -->\
+<!-- Normalize --> \
 <style>\
    body,\
    ol,\
@@ -133,7 +131,7 @@
       .swap-for-small-3 \{\
          height: 0 !important;\
          max-width: 100% !important;\
-         padding-bottom: 100%;\
+        /* padding-bottom: 100%; */\
          background-size: contain;\
       \}\
    \}\
@@ -776,7 +774,7 @@
    .copy-left \{padding-left: 15px; text-align: left; \} .ql-item \{text-align: center; \} .ql-row \{line-height: 110%; \} .quick-links \{font-size: 16px !important; line-height: 125% !important; \} .main-title \{font-size: 26px; line-height: 125%; \}.stage-phone \{font-size: 17px; font-weight: bold; \} .phone-title \{color: #919191; font-size: 15px; line-height: 145%; font-weight: 400; \}  \
 </style>\
 <style>\
-    .greeting-title \{font-size: 20px; line-height: 125%; \} .greeting-copy \{font-size: 16px; line-height: 125%; \} .headline-copy \{font-size: 25px; line-height: 125%; \} .border-title-left \{font-size: 22px; line-height: 125%; font-weight: 300; \} .next-event-copy \{font-size: 30px; line-height: 125%; font-weight: 800; \} .next-steps-li \{font-size: 16px; line-height: 160%; font-weight: 400; \} .body-copy \{font-size: 16px; line-height: 160%; font-weight: 300; \} \
+    .greeting-title \{font-size: 20px; line-height: 125%; \} .greeting-copy \{font-size: 16px; line-height: 155%; \} .headline-copy \{font-size: 25px; line-height: 125%; \} .border-title-left \{font-size: 22px; line-height: 125%; font-weight: 300; \} .next-event-copy \{font-size: 30px; line-height: 125%; font-weight: 800; \} .next-steps-li \{font-size: 16px; line-height: 160%; font-weight: 400; \} .body-copy \{font-size: 16px; line-height: 160%; font-weight: 300; \} \
 </style>\
 <style>\
     .vp-list-title \{font-size:18px; line-height:125%; font-weight:800; \} #all \{font-size: 18px; line-height: 125%; font-weight: 400; \} #footer table \{font-size: 11px; line-height: 18px;\}\
@@ -785,19 +783,41 @@
     .vp-list-copy\{font-size:16px; line-height:160%; font-weight:400; \} .covid-message \{font-size: 12px; line-height: 18px; font-weight: 700; \} .bold-700 \{font-weight: 700; \} .bold-800 \{font-weight: 800; \} @media only screen and (max-width: 580px) \{.copy-left \{padding-left: 0px !important; padding-right: 10px !important; \} .copy-center \{padding-left: 0px !important; padding-right: 10px !important; \} .nav-last \{border-bottom: 1px solid #e3e3e3 !important; \} .ql-row \{line-height: 280% !important; \} th.nav \{text-align: center !important; \} .border \{border-bottom: 1px solid #e3e3e3 !important; \} .ql-item \{text-align: center !important; border-bottom: 1px solid #e3e3e3 !important; line-height: 280% !important; padding: 0px 0px 8px 0px !important; \} .quick-links \{font-size: 18px !important; line-height: 125% !important; \} .main-title \{font-size: 22px; line-height: 125%; \} .stage-phone \{font-size: 14px; font-weight: bold; \} \} \
 </style> \
 <style>\
-   .ftLines \{border: 0px solid #EEEEEE; padding:3px; background-color:#EEEEEE; font-size:11px !important; line-height:125%; \} .tdine \{background-color:white; font-size:11px !important; \} .ftTotal \{border: 1px solid white; background-color: white; font-size:11px !important; \} #quoteGrid \{font-family: 'Open Sans', Helvetica, sans-serif; \} .bLine \{border-bottom:2px #b3b3b3 solid; font-weight:bold; font-size:11px !important; line-height:125%; padding-bottom:5px; \} .bLineLight \{border-bottom:1px #e6e6e6 solid; font-weight:bold; font-size:11px !important; padding:0px; \} .secondTitle\{font-size:14px; line-height:125%; font-weight:bold; padding:5px 0px; \} .dataReturns \{font-size:11px !important; line-height:125%; color: #a6a6a6; padding:4px 0px; \} \
+     \
+    .ftLines \{border: 0px solid #EEEEEE; padding:3px; background-color:#EEEEEE; font-size:11px !important; line-height:125%; \} \
+      .tdine \{background-color:white; font-size:11px !important; \} \
+      .ftTotal \{border: 1px solid white; background-color: white; font-size:11px !important; \} \
+      .bLine \{border-bottom:2px #b3b3b3 solid; font-weight:bold; font-size:11px !important; line-height:125%; padding-bottom:5px; padding-top: 5px; \} \
+      .bLineLight \{border-bottom:1px #e6e6e6 solid; font-weight:bold; font-size:11px !important; padding:0px 0px 5px 0px; \} \
+      .dataReturns \{font-size:11px !important; line-height:145%; color: #a6a6a6; padding:4px 0px; \} \
+\
+      #quoteGrid \{font-family: 'Open Sans', Helvetica, sans-serif; \} \
+\
+      .receiptCopy \{font-size:14px; line-height:145%; padding:5px 0px;color: #858585;\}\
+      .firstTitle \{font-size:14px; line-height:145%; font-weight:800; padding:5px 0px;color: #858585;\} \
+      .secondTitle \{font-size:14px; line-height:145%; font-weight:bold; padding:5px 0px; \} \
+      .thirdTitle\{font-size:16px; line-height:145%; font-weight:bold; padding:5px 0px; \}\
+      .fourthTitle\{font-size:18px; line-height:145%; font-weight:bold; padding:5px 0px; \} \
+      .receiptLegal \{font-size:11px; line-height:145%; padding:5px 0px;color: #858585;\}\
+\
 </style>\
    \
 <style>\
-   .orange-border \{height: 3px; border-width: 0; color: #f96302; background-color: #f96302; \} .grey-border \{height: 1px; border-width: 0; color: #e3e3e3; background-color: #e3e3e3; \} .no-product \{background-color: #f2f2f2; \} .gold-border \{border: 3px solid #e3c149; \} .border-title-left \{white-space: nowrap; width:1px; padding-right:10px; \} .border-title-right \{max-width: 50%; \} .next-event-title, .next-steps-title, .credit-title, .value-props-title, .next-steps-list \{width: 100%; \} .value-props-list, .gray_titles_2col \{width: 320px; max-width: 320px; \} .titles_2col \{width: 350px; max-width: 350px; \} .vp-list-copy \{max-width: 29%; \} .next-steps-number \{padding-right: 15px; width: 35px; \} .value-props-icon \{padding-right: 10px; width: 2%; \} .steps-number \{width: 30px !important; \} .next-steps-li \{padding-top: 4px; padding-right: 35px; \} .vp-list-title \{vertical-align: top; padding-top: 4px; \} .value-props-copy \{text-align: left !important; \} .coupon-left, .coupon-right \{max-width: 50% !important; \} .coupon-right \{\} @media only screen and (max-width: 580px) \{.next-steps-li \{padding-top: 4px; padding-right: 15px; \} .btn-1 \{padding-top: 0px; text-align: center !important; \} .value-props-list \{width: 100% !important; \} .coupon-left, .coupon-right \{max-width: 100% !important; \} .np-middle \{padding: 0px !important; \} \} \
+   .orange-border \{height: 3px; border-width: 0; color: #f96302; background-color: #f96302; \} .grey-border \{height: 1px; border-width: 0; color: #e3e3e3; background-color: #e3e3e3; \} .no-product \{background-color: #f2f2f2; \} .gold-border \{border: 3px solid #e3c149; \} .border-title-left \{white-space: nowrap; width:1px; padding-right:10px; \} .border-title-right \{max-width: 50%; \} .next-event-title, .next-steps-title, .credit-title, .value-props-title, .next-steps-list \{width: 100%; \} .value-props-list, .gray_titles_2col \{width: 320px; max-width: 320px; \} .titles_2col \{width: 350px; max-width: 350px; \} .vp-list-copy \{max-width: 29%; \} .next-steps-number \{padding-right: 15px; width: 35px; \} .value-props-icon \{padding-right: 10px; width: 2%; \} .steps-number \{width: 30px !important; \} .next-steps-li \{padding-top: 4px; padding-right: 35px; \} .vp-list-title \{vertical-align: top; padding-top: 4px; \} .value-props-copy \{text-align: left !important; \} .coupon-left, .coupon-right \{max-width: 50% !important; \} .coupon-right \{\} @media only screen and (max-width: 580px) \{.next-steps-li \{padding-top: 4px; padding-right: 15px; \} .btn-1 \{padding-top: 0px; text-align: center !important; \} .value-props-list \{width: 100% !important; \} .coupon-left, .coupon-right \{max-width: 100% !important; \} .np-middle \{padding: 0px !important; \} .great-deal-right \{padding:10px 15px 15px 15px;\} \} \
+</style>\
+<style>\
+    .great-deal-orange \{color:#f96302; font-size:30px;font-weight:800;\}\
 </style>\
 \
 <!-- image swaps -->\
 <style>\
    @media only screen and (max-width: 580px) \{\
       #hero-image \{\
+         /* padding-bottom: 46% !important;\
+         background-size: cover; */\
          padding-bottom: 46% !important;\
-         background-size: cover;\
+         background-size: contain;\
+         background-repeat: no-repeat !important;\
       \}\
    \}\
 </style>\

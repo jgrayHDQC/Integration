@@ -1,0 +1,522 @@
+{\rtf1\ansi\ansicpg1252\cocoartf2513
+\cocoatextscaling0\cocoaplatform0{\fonttbl\f0\fswiss\fcharset0 Helvetica;}
+{\colortbl;\red255\green255\blue255;}
+{\*\expandedcolortbl;;}
+\margl1440\margr1440\vieww10800\viewh8400\viewkind0
+\pard\tx720\tx1440\tx2160\tx2880\tx3600\tx4320\tx5040\tx5760\tx6480\tx7200\tx7920\tx8640\pardirnatural\partightenfactor0
+
+\f0\fs24 \cf0 <messaging:emailTemplate subject="HDMS Quote Details" recipientType="User" relatedToType="Quote">\
+<messaging:htmlEmailBody >\
+<html>\
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />\
+    <meta name="viewport" content="width=device-width, initial-scale=1" />\
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />\
+    <head>\
+    <style type="text/css" href="css/styles.css">\
+        @import url(https://fonts.googleapis.com/css?family=Open+Sans:400);\
+\
+        body \{\
+            font-family: Helvetica, arial, sans-serif, 'Open Sans' !important;\
+        \}\
+    </style>\
+\
+    <style type="text/css">\
+        a:link \{\
+        \}\
+\
+        a \{\
+            color: #858585;\
+        \}\
+\
+        body \{\
+            font-family: Arial, Helvetica, sans-serif;\
+            text-align: center;\
+            line-height: normal;\
+            color: #333333;\
+            font-size: 15px;\
+            letter-spacing: 0px;\
+            background-color: #EBEBEB;\
+            border-bottom: 1px solid #D1D1D1;\
+        \}\
+        strong \{\
+            font-weight:bolder;\
+        \}\
+        h1 \{\
+            font-size: 30px;\
+            font-weight: bold;\
+            color: #333333;\
+            line-height: 120%;\
+        \}\
+\
+        h2 \{\
+            color: #333333;\
+            font-size: 32px;\
+            font-weight: bold;\
+            line-height: normal;\
+        \}\
+\
+        h3 \{\
+            color: #5F5F5F;\
+            font-size: 20px;\
+            font-weight: normal;\
+            line-height: 100%;\
+        \}\
+\
+        h4 \{\
+            color: #5F5F5F;\
+            font-size: 14px;\
+            font-weight: bold;\
+        \}\
+\
+            h4.purch \{\
+                color: #5F5F5F;\
+                font-size: 12px;\
+                font-weight: bold;\
+            \}\
+\
+        h5 \{\
+            color: #5F5F5F;\
+            font-size: 8.5px;\
+            font-weight: bold;\
+        \}\
+\
+        .collapse\{\
+          cursor: pointer;\
+          display: block;\
+          background: #fff;\
+          text-align: center;\
+        \}\
+        .collapse + input\{\
+          display: none; /* hide the checkboxes */\
+        \}\
+        .collapse + input + div\{\
+          display:none;\
+        \}\
+        .collapse + input:checked + div\{\
+          display:block;\
+        \}\
+\
+        h3.quoteGloabal \{\
+            color: #000;\
+            font-size: 20px;\
+            font-weight: bold;\
+            line-height: 100%;\
+        \}\
+\
+        .disclaimer1 \{\
+            color: #858585;\
+            font-size: 10px !important;\
+            /*font-weight: bold;*/\
+        \}\
+\
+        .promo \{\
+            /*color: #858585;*/\
+            font-size: 8.5px;\
+            font-weight: bold;\
+            text-align: left;\
+            padding-bottom: 5px;\
+        \}\
+\
+        .promoHeader \{\
+            font-size: 12px;\
+            font-weight: bolder;\
+            text-align: left;\
+            padding-bottom: 5px;\
+        \}\
+\
+        .quote1 \{\
+            color: #858585;\
+            font-size: 12px;\
+            font-weight: normal;\
+        \}\
+        \
+         .quote1citi \{\
+            color: #000;\
+            font-size: 12px;\
+            font-weight: bold;\
+        \}\
+\
+        .btn1 \{\
+            color: #FFFFFF;\
+            font-size: 10px;\
+            font-weight: bold;\
+        \}\
+\
+        .quoteWarn1 \{\
+            color: #4A4A4A;\
+            font-size: 12px;\
+            font-weight: bolder;\
+        \}\
+\
+        .quoteWarn2 \{\
+            color: red;\
+            font-size: 12px;\
+            font-weight: bolder;\
+        \}\
+\
+\
+        .quote10 \{\
+            color: #858585;\
+            font-size: 12px;\
+            font-weight: normal;\
+        \}\
+\
+        .quote3 \{\
+            color: #000;\
+            font-size: 15px;\
+        \}\
+\
+        .quote5 \{\
+            color: #F60;\
+            font-size: 32px;\
+            font-weight: bolder;\
+        \}\
+\
+        .quote51 \{\
+            color: #F60;\
+            font-size: 32px;\
+            font-weight: bold;\
+        \}\
+\
+        .quote52 \{\
+            color: #F60;\
+            font-size: 16px;\
+            font-weight: bold;\
+        \}\
+\
+        .quote4 \{\
+            color: #000;\
+            font-size: 45px;\
+            font-weight: bold;\
+        \}\
+\
+        .superscript \{\
+            color: #000;\
+            font-size: 18px;\
+            font-weight: bold;\
+        \}\
+\
+        .quote2 \{\
+            font-size: 12px;\
+            color: #f47912;\
+            font-family: Helvetica, Arial, Sans-Serif;\
+            text-decoration: none;\
+            vertical-align: middle;\
+        \}\
+\
+            <!--.quote2:link \{\
+                color: #f47912;\
+            \}\
+\
+            .quote2:active \{\
+                color: #f47912;\
+            \}-->\
+\
+        td \{\
+            height: 5px;\
+        \}\
+\
+        .tr \{\
+            line-height: normal;\
+        \}\
+        .textwhite \{\
+            color: #FFF;\
+            font-size: 12px;\
+            font-weight: bold;\
+            line-height: 10%;\
+        \}\
+\
+        td \{\
+            vertical-align: top;\
+        \}\
+\
+        a, img \{\
+            border: none;\
+            outline: none;\
+        \}\
+        .orangebutton11 \{\
+            border-top: 0px solid #bababa;\
+            background: #f7984f;\
+            background: -webkit-gradient(linear, left top, left bottom, from(#ed6b07), to(#f7984f));\
+            background: -webkit-linear-gradient(top, #f47912, #f47912);\
+            background: -moz-linear-gradient(top, #f47912, #f47912);\
+            background: -ms-linear-gradient(top, #f47912, #f47912);\
+            background: -o-linear-gradient(top, #f47912, #f47912);\
+            -webkit-border-radius: 12px;\
+            -moz-border-radius: 12px;\
+            border-radius: 6px;\
+            -webkit-box-shadow: rgba(0,0,0,1) 0 0px 0;\
+            -moz-box-shadow: rgba(0,0,0,1) 0 0px 0;\
+            box-shadow: rgba(0,0,0,1) 0 0px 0;\
+            text-shadow: rgba(0,0,0,.4) 0 0px 0;\
+            color: white;\
+            font-size: 18px;\
+            font-weight: bold;\
+            font-family: Helvetica, Arial, Sans-Serif;\
+            text-decoration: none;\
+            vertical-align: middle;\
+            padding-top: 10px;\
+            padding-right: 16px;\
+            padding-bottom: 12px;\
+            padding-left: 16px;\
+        \}\
+\
+\
+\
+        @media only screen and (min-device-width : 414px) and (max-device-width : 736px) and (orientation : portrait) \{\
+\
+            body \{\
+                font-family: Helvetica, Arial, sans-serif;\
+                text-align: center;\
+                line-height: normal;\
+                color: #333333;\
+                font-size: 8px;\
+                letter-spacing: 0px;\
+                background-color: #EBEBEB;\
+                border-bottom: 1px solid #D1D1D1;\
+            \}\
+\
+            img \{\
+                width: 100%; /* insert preferred value */\
+                height: auto;\
+            \}\
+\
+            table \{\
+                width: 100%; /* insert preferred value */\
+                height: auto;\
+            \}\
+\
+            .superscript \{\
+                color: #000;\
+                font-size: 14px;\
+                font-weight: bold;\
+            \}\
+             .quote10 \{\
+                color: #858585;\
+                font-size: 11px;\
+                font-weight: bold;\
+            \}\
+            .quote2 \{\
+                font-size: 8px;\
+                color: #f47912;\
+                font-family: Helvetica, Arial, Sans-Serif;\
+                text-decoration: none;\
+                vertical-align: middle;\
+            \}\
+\
+            .quote3 \{\
+                color: #000;\
+                font-size: 10px;\
+            \}\
+            \
+            .quote5 \{\
+                color: #F60;\
+                font-size: 22px;\
+            \}\
+            \
+             .quote6 \{\
+                color: #F60;\
+                font-size: 22px;\
+            \}\
+\
+            .quote4 \{\
+                color: #000;\
+                font-size: 25px;\
+                font-weight: bold;\
+            \}\
+            .center \{\
+              margin-left: auto;\
+              margin-right: auto;\
+              width:100%;\
+            \}\
+      \
+    </style>\
+    \
+\
+    <link href="/QuoteEmail/Content/BootStrapModal.css" rel="stylesheet" type="text/css" />\
+    <link href="/QuoteEmail/Content/dd" rel="stylesheet" type="text/css" />\
+    <link href="/QuoteEmail/Content/psFadder.css" rel="stylesheet" />\
+    <style>\
+        .purchQuest \{\
+            display: none;\
+        \}\
+\
+        .purchAns \{\
+            display: block;\
+            padding: 5px 10px;\
+        \}\
+    </style>\
+</head>\
+\
+<table width="600" border="0" align="center" cellpadding="3" cellspacing="0">\
+    <tr>\
+        <td width="609" bgcolor="#FFFFFF">\
+            <table border="0" cellspacing="0" cellpadding="0" align="left">\
+                <tr>\
+                    <td width="48%">\
+                        <div align="left"><img src="http://www.homedepotmeasures.com/images/thd/email_images/HomeservicesLogo.png" width="200" height="93" /></div>\
+                    </td>\
+                    <td>&nbsp;</td>\
+                </tr>\
+            </table>\
+        </td>\
+    </tr>\
+    <tr>\
+        <td bgcolor="#FFFFFF">\
+            <div align="center">\
+                <span class="row_4">\
+                    <img src="http://www.homedepotmeasures.com/images/thd/email_images/quote_detail.jpg" width="715" height="74" class="image" />\
+                </span>\
+            </div>\
+        </td>\
+    </tr>\
+    <tr>\
+        <td bgcolor="#FFFFFF">\
+            <table width="100%" border="0" cellpadding="5" cellspacing="0" cellpading="2">\
+                <tbody>\
+                    <tr>\
+                        <th colspan="2" bgcolor="#EEEEEE"><div align="left"><span class="quote1">MEASURE #</span><strong>\{!relatedTo.opportunity.HDMS_Measure_Number__c\}</strong>&nbsp;&nbsp;&nbsp; <span class="quote1">QUOTE #</span> <strong>\{!relatedTo.Name\}</strong></div></th>\
+                        <td width="32%" bgcolor="#EEEEEE">&nbsp;</td>\
+                    </tr>\
+                    <tr>\
+                        <td width="26%" class="quote1"><div align="left">CUSTOMER NAME</div></td>\
+                        <td width="42%" class="quote1"><div align="left">CUSTOMER ADDRESS</div></td>\
+                        <td>&nbsp;</td>\
+                    </tr>\
+                    <tr>\
+                        <td height="48">\
+                            <div align="left">\
+                                \{!relatedTo.Opportunity.Customer_Name__c\}<br />\
+                            </div>\
+                        </td>\
+                        <td>\
+                            <div align="left">\
+                               \{!relatedTo.Opportunity.Address__c\}<br />\
+                            </div>\
+                        </td>\
+                        <td>&nbsp;</td>\
+                    </tr>\
+                </tbody>\
+            </table>\
+            <hr />\
+            <table width="90%" border="0" align="center" cellpadding="0" cellspacing="0">\
+                <tbody>\
+                    <tr>\
+                        <td width="34%" height="144" align="left" nowrap="nowrap" bgcolor="#FFFFFF">\
+                            <table width="90%">\
+                                <tr>\
+                                    <td height="40" align="left">\
+                                        <strong>\
+                                            <span class="quote1"><strong>TOTAL </strong></span><br />\
+                                            <span class="quote4" style="text-decoration:none;border:none;color:#000;font-size: 45px;">\
+                                                <strong style="font-weight: bolder;">$\{!relatedTo.Grand_Total__c\}</strong>\
+                                            </span>\
+                                        </strong>\
+                                    </td>\
+                                </tr>\
+                                <tr>\
+                                    <td align="left"><span class="quote1">THIS QUOTE EXPIRES ON &nbsp; <apex:outputText value="\{0, date, MMMM d','  yyyy\}">\
+                                    <apex:param value="\{!relatedTo.ExpirationDate\}" /></apex:outputText></span></td>\
+                                </tr>\
+                                <tr>\
+                                    <td>\
+                                        <table border="0" align="left" cellpadding="0" cellspacing="0">\
+                                            <tbody>\
+                                                <tr>\
+                                                    <td nowrap="nowrap">\
+                                                        <div align="left" class="quote2">\
+                                                            <div align="center"><strong><span><a href="\{!relatedto.Salesforce_Plan_Url__c\}" target="_blank" class="quote2">Review floor plan</a></span></strong></div>\
+                                                        </div>\
+                                                    </td>\
+                                                        <td align="right" nowrap="nowrap" >&nbsp;</td>\
+                                                </tr>\
+                                            </tbody>\
+                                        </table>\
+                                    </td>\
+                                </tr>\
+                            </table>\
+                        </td>\
+                        <td width="10%" align="center" bgcolor="#FFFFFF"></td>\
+                        <td width="75%" align="center" bgcolor="#FFFFFF">\
+                            \
+                        <table width="98%">\
+                            <tr>\
+                                <td>\
+                                    <h5 align="center" style="margin-top: 3px;">\
+                                        <apex:outputPanel rendered="\{!(relatedTo.Opportunity.Product_Name__c =='Carpet')\}">\
+                                            <p class="quote1citi">Let's do this. Call us toll free at <strong style="font-weight: bolder;">\{!$Label.HDMSPhoneCarpet\}</strong> to get started</p>\
+                                        </apex:outputPanel>\
+                                        <apex:outputPanel rendered="\{!(relatedTo.Opportunity.Product_Name__c !='Carpet')\}">\
+                                            <p class="quote1citi">Let's do this. Call us toll free at <strong style="font-weight: bolder;">\{!$Label.HDMSPhoneHardsurface\}</strong> to get started</p>\
+                                        </apex:outputPanel>\
+                                        <br/>\
+                                        <p>We're available 7 days a week, <br /> Mon-Fri  8:30am-10:00pm ET, <br /> Sat 8:30am-7:00pm ET, Sun 11:30pm-8:00pm ET</p>\
+                                    </h5>\
+                                </td>\
+                            </tr>\
+                        </table>\
+                        </td>\
+                    </tr>\
+                </tbody>\
+            </table>\
+            <hr />\
+            <table width="100%" border="0">\
+                <tr>\
+                    <td width="27%"><div align="center"> <span class="quote1"><strong>PAYMENTS AS <br />\
+                    LOW AS:</strong></span><br />\
+                    <span class="quote5" style="text-decoration:none;border:none;color:#f60;font-size:32px;"><strong>$<c:HDMSCitiDetails value="0" QutId="\{!relatedTo.Id\}"></c:HDMSCitiDetails></strong></span> </div></td>\
+                    <td width="24%" rowspan="2"><a href="https://citiretailservices.citibankonline.com/CRS/acq/launch/index.action?app=UNSOL&siteId=PLCN_HOMEDEPOT&sc=30047"><img src="http://www.homedepotmeasures.com/images/THD/email_images/credit_card.jpg" width="133" height="110" alt="Apply Now" /></a></td>\
+                    <td width="49%"><div>\
+                    <div class="quote1citi" align="left"><c:HDMSCitiDetails value="2" QutId="\{!relatedTo.Id\}"></c:HDMSCitiDetails>*</div>\
+                    </div></td>\
+                </tr>\
+                <tr>\
+                    <td><div align="center">\
+                    <div align="center"> <span class="quote1"> <strong> PER MONTH </strong><br />\
+                        Special Financing with The Home Depot Consumer Credit Card</span> </div>\
+                    <div align="left"></div>\
+                    </div></td>\
+                    <td><div>\
+                    <div align="left"><span class="quote2"><strong>Special Financing for 6 months*</strong></span>\
+                        <strong class="quote10"><span>on purchases of $299 or more made on the The Home Depot Consumer Credit Card. </span></strong></div>\
+                    </div></td>\
+                </tr>\
+            </table>\
+            <div align="left"></div>\
+        <hr/> \
+        <table class="Center" width="100%">\
+            <label class="collapse" for="_2"><strong class="quote2">Quote Details</strong></label>\
+            <c:HDMSQuoteEmailDetails quoteNbr="\{!relatedTo.Name\}"> </c:HDMSQuoteEmailDetails>\
+            <apex:outputPanel rendered="\{!(relatedTo.Opportunity.Product_Name__c =='Carpet')\}">\
+                <img src="https://www.homedepotmeasures.com/images/thd/reminder/quote_detail_pics_carpet.jpg" width="600" height="166" />\
+            </apex:outputPanel>\
+            <apex:outputPanel rendered="\{!(relatedTo.Opportunity.Product_Name__c !='Carpet')\}">\
+                <img src="https://www.homedepotmeasures.com/images/thd/reminder/quote_detail_pics_hs.jpg" width="600" height="166" />\
+            </apex:outputPanel>\
+            <apex:outputPanel rendered="\{!(relatedTo.Opportunity.Product_Name__c =='Carpet')\}">\
+                <tr align="center" width="100%"><a href="https://www.homedepot.com/hdus/en_US/DTCCOMNEW/fetch/DIY_Projects_and_Ideas/Flooring/Guides/Carpet-Buying-Guide.pdf"><img src="https://www.homedepotmeasures.com/images/thd/reminder/lifetime_warranty.png" ></img></a></tr>\
+            </apex:outputPanel>\
+            <apex:outputPanel rendered="\{!(relatedTo.Opportunity.Product_Name__c !='Carpet')\}">\
+                <tr align="center" width="100%"><img src="https://www.homedepotmeasures.com/images/thd/reminder/oneyear_warranty.png" ></img></tr>\
+            </apex:outputPanel> \
+            <p align="center" class="disclaimer1">Please do not reply to this email. Home Depot Product Authotity, LLC.</p>\
+        </table>\
+        </td>\
+    </tr>\
+    <tr>\
+        <td bgcolor="#FFFFFF"><h4 style="text-align:left;font-weight:normal;margin-top: 5px;margin-bottom: 0px;font-size:13.5px;">\
+            FOR ALL FLOORING INSTALLATIONS CUSTOMER ACKNOWLEDGES THAT THE AMOUNT OF PRODUCT PURCHASED WILL BE THE BASIS FOR INSTALLATION LABOR CHARGES, INCLUDING REMOVAL AND HAUL AWAY.THIS AMOUNT MAY VARY FROM ACTUAL SIZE OF CUSTOMER'S ROOM(S).\
+            FOR CARPET INSTALLATION, THE CARPET ESTIMATE IS USED TO DETERMINE THE AMOUNT OF PADDING PURCHASED. ANY EXCESS MATERIALS WILL BE REMOVED UNLESS CUSTOMER REQUESTS OTHERWISE. \
+        </h4>\
+        <h5 align="left" class="disclaimer1" style="text-align:left;margin-top: 5px;">\
+            <text>\
+            *MinPayDisclosure: <c:HDMSCitiDetails value="1" QutId="\{!relatedTo.Id\}"></c:HDMSCitiDetails> <c:HDMSCitiDetails value="2" QutId="\{!relatedTo.Id\}"></c:HDMSCitiDetails> <c:HDMSCitiDetails value="3" QutId="\{!relatedTo.Id\}"></c:HDMSCitiDetails> <c:HDMSCitiDetails value="4" QutId="\{!relatedTo.Id\}"></c:HDMSCitiDetails><br />\
+            *EqualPayDisclosure: <c:HDMSCitiDetails value="5" QutId="\{!relatedTo.Id\}"></c:HDMSCitiDetails> <c:HDMSCitiDetails value="6" QutId="\{!relatedTo.Id\}"></c:HDMSCitiDetails>\
+            </text>\
+        </h5>    \
+        </td>\
+    </tr>\
+</table>\
+</html>\
+</messaging:htmlEmailBody>\
+</messaging:emailTemplate>}

@@ -6,7 +6,7 @@
 \pard\tx720\tx1440\tx2160\tx2880\tx3600\tx4320\tx5040\tx5760\tx6480\tx7200\tx7920\tx8640\pardirnatural\partightenfactor0
 
 \f0\fs24 \cf0 <apex:component controller="HDMSQuoteDetailsEmailCtrl" access="global" >\
-  <apex:attribute name="productChoice" description="Product info, text content" type="String" />\
+ <!-- <apex:attribute name="productChoice" description="Product info, text content" type="String" /> -->\
   <apex:attribute name="phoneNumber" description="Phone number" type="String" />\
   <apex:attribute name="selectionPhoneNum" description="No Product Image ALT text" type="String" />\
   <apex:attribute name="custFirstName" description="First name" type="String" />\
@@ -79,7 +79,7 @@
                     <tr>\
                         <td class="credit-copy" valign="top">\
                             Then, call to give us your selection:<br/>\
-                            <a href="tel:18002488982" class="a2">1-800-248-8982, Action #1</a>\
+                            <a href="tel:\{!phoneNumber\}" class="a2">\{!selectionPhoneNum\}</a>\
                         </td>\
                     </tr>\
                 </table>\

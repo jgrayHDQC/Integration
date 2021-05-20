@@ -5,7 +5,7 @@
 \margl1440\margr1440\vieww22340\viewh13940\viewkind0
 \pard\tx720\tx1440\tx2160\tx2880\tx3600\tx4320\tx5040\tx5760\tx6480\tx7200\tx7920\tx8640\pardirnatural\partightenfactor0
 
-\f0\fs24 \cf0 <messaging:emailTemplate subject="Post Measure" recipientType="Lead" relatedToType="Lead">\
+\f0\fs24 \cf0 <messaging:emailTemplate subject="Post Measure" recipientType="Contact" relatedToType="hms_EmailData__c">\
  <messaging:htmlEmailBody >\
 \
 <html lang="en" xmlns="http://www.w3.org/1999/xhtml" xmlns:v="urn:schemas-microsoft-com:vml" xmlns:o="urn:schemas-microsoft-com:office:office">\
@@ -38,13 +38,13 @@ body, table, td, th, .btn-text \{font-family: Helvetica, Arial, sans-serif !impo
             <td id="all">\
 <!-- @begin email body interior -->\
 \
-<c:pvfc_Header_01 logoLink="https://www.homedepot.com/services/" titleCopy="We have your measurements! Now we need your product." phoneNum="\{!relatedTo.StagePhone__c\}" imgPathFull="\{!$Label.CX_LibraryPostMeasureNPHeroD\}" imgPathMobile="\{!$Label.CX_LibraryPostMeasureNPHeroM\}" ></c:pvfc_Header_01>\
+<c:pvfc_Header_01 logoLink="https://www.homedepot.com/services/" titleCopy="We have your measurements! Now we need your product." phoneNum="\{!relatedTo.PhoneNumber__c\}" imgPathFull="\{!$Label.CX_LibraryPostMeasureNPHeroD\}" imgPathMobile="\{!$Label.CX_LibraryPostMeasureNPHeroM\}" ></c:pvfc_Header_01>\
 \
-<c:evfc_NoProduct_01 iconURL="\{!$Label.CX_LibraryShoppingCartIcon\}" custFirstName="\{!relatedTo.FirstName\}" selectionPhoneNum="18556327873" selectionPhoneCopy="1-(855)-MEASURE" buttonCopy="Browse&nbsp;Products&nbsp;Online" buttonURL="https://www.homedepot.com/b/Flooring/N-5yc1vZaq7r" noProd1URL="\{!$Label.CX_LibraryNoProd01Icon\}" noProd1ALT="Carpet" noProd2URL="\{!$Label.CX_LibraryNoProd02Icon\}" noProd2ALT="Hardwood" noProd3URL="\{!$Label.CX_LibraryNoProd03Icon\}" noProd3ALT="Tile"></c:evfc_NoProduct_01>\
+<c:evfc_NoProduct_01 iconURL="\{!$Label.CX_LibraryShoppingCartIcon\}" custFirstName="\{!relatedTo.FirstName__c\}" selectionPhoneNum="\{!relatedTo.BranchName__c\}" selectionPhoneCopy="\{!relatedTo.StoreName__c\}" buttonCopy="Browse&nbsp;Products&nbsp;Online" buttonURL="https://www.homedepot.com/b/Flooring/N-5yc1vZaq7r" noProd1URL="\{!$Label.CX_LibraryNoProd01Icon\}" noProd1ALT="Carpet" noProd2URL="\{!$Label.CX_LibraryNoProd02Icon\}" noProd2ALT="Hardwood" noProd3URL="\{!$Label.CX_LibraryNoProd03Icon\}" noProd3ALT="Tile"></c:evfc_NoProduct_01>\
 \
-<c:evfc_CustomerInfo_01 custFirstName="\{!relatedTo.FirstName\}" custLastName="\{!relatedTo.LastName\}" custEmail="\{!relatedTo.email\}" custPhone="\{!relatedTo.phone\}"></c:evfc_CustomerInfo_01>\
+<c:evfc_CustomerInfo_01 custFirstName="\{!relatedTo.FirstName__c\}" custLastName="\{!relatedTo.LastName__c\}" custEmail="\{!relatedTo.ToEmail__c\}" custPhone="\{!relatedTo.RefPhone__c\}"></c:evfc_CustomerInfo_01>\
 \
-<c:pvfc_QuickLinks_02 ql_01_copy="Licenses" ql_01_URL="https://www.homedepot.com/c/SV_HS_Contractor_License_Numbers" ql_02_copy="Unsubscribe" ql_02_URL="http://pages.homedepot.com/HDOptdown?email=\{!relatedTo.Email\}&list=HD_SURVEYS&source_id=1361&trans_id=54" ql_03_copy="Home Depot Flooring Installation" ql_03_URL="https://www.homedepot.com/services/c/flooring-installation/660eb1d19?vfrom=global-menu"></c:pvfc_QuickLinks_02>\
+<c:pvfc_QuickLinks_02 ql_01_copy="Licenses" ql_01_URL="https://www.homedepot.com/c/SV_HS_Contractor_License_Numbers" ql_02_copy="Unsubscribe" ql_02_URL="http://pages.homedepot.com/HDOptdown?email=\{!relatedTo.ToEmail__c\}&list=HD_SURVEYS&source_id=1361&trans_id=54" ql_03_copy="Home Depot Flooring Installation" ql_03_URL="https://www.homedepot.com/services/c/flooring-installation/660eb1d19?vfrom=global-menu"></c:pvfc_QuickLinks_02>\
 \
 <c:pvfc_Footer_01 ></c:pvfc_Footer_01>\
 \

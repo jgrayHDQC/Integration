@@ -5,7 +5,7 @@
 \margl1440\margr1440\vieww10800\viewh8400\viewkind0
 \pard\tx720\tx1440\tx2160\tx2880\tx3600\tx4320\tx5040\tx5760\tx6480\tx7200\tx7920\tx8640\pardirnatural\partightenfactor0
 
-\f0\fs24 \cf0 <messaging:emailTemplate subject="Your Quote Reminder" relatedToType="hms_EmailData__c"><!-- recipientType="Lead" -->\
+\f0\fs24 \cf0 <messaging:emailTemplate subject="\{!relatedTo.AltRefUrl__c\}" relatedToType="hms_EmailData__c"><!-- recipientType="Lead" -->\
  <messaging:htmlEmailBody >\
 \
 <html lang="en" xmlns="http://www.w3.org/1999/xhtml" xmlns:v="urn:schemas-microsoft-com:vml" xmlns:o="urn:schemas-microsoft-com:office:office">\
@@ -28,7 +28,7 @@ body, table, td, th, .btn-text \{font-family: Helvetica, Arial, sans-serif !impo
 </style>\
 <![endif]-->\
 \
-<c:evfc_PreviewText_01 previewText="This is your new preview text"></c:evfc_PreviewText_01>\
+<c:evfc_PreviewText_01 previewText="\{!relatedTo.AltString__c\}"></c:evfc_PreviewText_01>\
 \
 <!-- @begin email body frame, DO NOT REMOVE -->\
     <table style="width: 100%;" lang="en" role="presentation">\
@@ -40,13 +40,13 @@ body, table, td, th, .btn-text \{font-family: Helvetica, Arial, sans-serif !impo
 \
 <c:pvfc_Header_01 logoLink="https://www.homedepot.com/services/" titleCopy="Reminder - Your quote is ready and your new floors are waiting!" phoneNum="\{!$Label.HDMSSupportPhoneNumber\}" imgPathFull="\{!$Label.CX_LibraryQuoteReminderD\}" imgPathMobile="\{!$Label.CX_LibraryQuoteReminderM\}" ></c:pvfc_Header_01>\
 \
-<c:pvfc_Greeting_01 custFirstName="\{!relatedTo.CustomerName__c\}" greetingsCopy="Let&rsquo;s move forward with your flooring project. Your itemized flooring quote below includes the cost of labor and materials. Purchase today and we&rsquo;ll call to schedule your installation."></c:pvfc_Greeting_01>\
+<c:pvfc_Greeting_01 custFirstName="\{!relatedTo.FirstName__c\}" greetingsCopy="Let&rsquo;s move forward with your flooring project. Your itemized flooring quote below includes the cost of labor and materials. Purchase today and we&rsquo;ll call to schedule your installation."></c:pvfc_Greeting_01>\
 <!--\
 <c:pvfc_QuoteDetails_2col_01 quoteSource="\{!relatedTo.SourceName__c\}" quoteData="\{!relatedTo.TotalAmount__c\}" expDate="\{!relatedTo.ExpirationDate__c\}" timeZone="\{!relatedTo.TimeZone__c\}" floorPlanURL="\{!relatedTo.AltRefUrl__c\}" buttonCopy="Purchase&nbsp;Now" buttonURL="\{!relatedTo.RefURL__c\}" hdmsProductName="\{!relatedTo.ProductName__c\}" ></c:pvfc_QuoteDetails_2col_01> \
 \
 <c:pvfc_QuoteDetails_grid quoteNbr="\{!relatedTo.DocumentNo__c\}"></c:pvfc_QuoteDetails_grid>\
 -->\
-<c:pvfc_GreatDeal_01 hero1URL="\{!$Label.CX_LibraryBarCodeIcon\}"></c:pvfc_GreatDeal_01>\
+<c:pvfc_GreatDeal_01 hero1URL="\{!$Label.CX_LibraryGreatDealHero\}" barCodeURL="\{!$Label.CX_LibrarySampleBarCode\}"></c:pvfc_GreatDeal_01>\
 \
 <c:pvfc_ValueProps_01 ></c:pvfc_ValueProps_01>\
 \
