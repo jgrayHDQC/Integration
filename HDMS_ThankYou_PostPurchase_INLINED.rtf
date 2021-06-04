@@ -5,7 +5,7 @@
 \margl1440\margr1440\vieww10800\viewh8400\viewkind0
 \pard\tx720\tx1440\tx2160\tx2880\tx3600\tx4320\tx5040\tx5760\tx6480\tx7200\tx7920\tx8640\pardirnatural\partightenfactor0
 
-\f0\fs24 \cf0 <messaging:emailTemplate subject="\{!relatedTo.AltRefUrl__c\}"  relatedToType="hms_EmailData__c"><!-- recipientType="Lead" -->\
+\f0\fs24 \cf0 <messaging:emailTemplate subject="\{!relatedTo.Title__c\}"  relatedToType="hms_EmailData__c"><!-- recipientType="Lead" -->\
 <!-- recipientType="User" relatedToType="Quote" -->\
  <messaging:htmlEmailBody >\
 \
@@ -44,7 +44,7 @@ body, table, td, th, .btn-text \{font-family: Helvetica, Arial, sans-serif !impo
 \
 <c:pvfc_Greeting_01 custFirstName="\{!relatedTo.CustomerName__c\}" greetingsCopy="Now that you've completed your payment, our Authorized Service Provider will reach out to schedule your installation. Please note it takes 24 hours to process your order. After that time, if you would like to make any changes, call your local Home Depot store. We want the process to be as smooth and easy as possible, so we've included some steps to help you prepare your home for installation below."></c:pvfc_Greeting_01>\
 \
-<c:pvfc_ProductReceipt_grid_02 quoteNbr="\{!relatedTo.DocumentNo__c\}" couponCode="\{!relatedTo.Discount__c\}" measureID="\{!relatedTo.RefString__c\}"></c:pvfc_ProductReceipt_grid_02>\
+<c:pvfc_ProductReceipt_grid_02 quoteNbr="\{!relatedTo.RefNumber__c\}" measureID="\{!relatedTo.DocumentNo__c\}" ></c:pvfc_ProductReceipt_grid_02>\
 \
 <c:pvfc_PrepareInstallList_01 image1URL="\{!$Label.CX_LibraryInstall01\}" image1ALT="Carpet" image2URL="\{!$Label.CX_LibraryInstall02\}" image2ALT="Hardwood" image3URL="\{!$Label.CX_LibraryInstall03\}" image3ALT="Tile" ></c:pvfc_PrepareInstallList_01>\
 \

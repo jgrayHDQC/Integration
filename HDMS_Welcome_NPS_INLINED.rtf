@@ -5,7 +5,7 @@
 \margl1440\margr1440\vieww19240\viewh12980\viewkind0
 \pard\tx720\tx1440\tx2160\tx2880\tx3600\tx4320\tx5040\tx5760\tx6480\tx7200\tx7920\tx8640\pardirnatural\partightenfactor0
 
-\f0\fs24 \cf0 <messaging:emailTemplate subject="Welcome No Product" recipientType="Lead" relatedToType="hms_EmailData__c">\
+\f0\fs24 \cf0 <messaging:emailTemplate subject="Your in-home flooring measure appointment is scheduled!" recipientType="Lead" relatedToType="hms_EmailData__c">\
  <messaging:htmlEmailBody >\
 \
 <html lang="en" xmlns="http://www.w3.org/1999/xhtml" xmlns:v="urn:schemas-microsoft-com:vml" xmlns:o="urn:schemas-microsoft-com:office:office">\
@@ -28,7 +28,7 @@ body, table, td, th, .btn-text \{font-family: Helvetica, Arial, sans-serif !impo
 </style>\
 <![endif]-->\
 \
-<c:evfc_PreviewText_01 previewText="This is your new preview text"></c:evfc_PreviewText_01>\
+<c:evfc_PreviewText_01 previewText="It\'92s time to choose your flooring product."></c:evfc_PreviewText_01>\
 \
 <!-- @begin email body frame, DO NOT REMOVE -->\
     <table style="width: 100%;" lang="en" role="presentation">\
@@ -38,7 +38,7 @@ body, table, td, th, .btn-text \{font-family: Helvetica, Arial, sans-serif !impo
             <td id="all">\
 <!-- @begin email body interior -->\
 \
-<c:pvfc_Header_01 logoLink="https://www.homedepot.com/services/" titleCopy="Thank you for scheduling your flooring measure" phoneNum="\{!relatedTo.PhoneNumber__c\}" imgPathFull="\{!$Label.CX_LibraryWelcomeHeroD\}" imgPathMobile="\{!$Label.CX_LibraryWelcomeHeroM\}" ></c:pvfc_Header_01>\
+    <c:pvfc_Header_01 logoLink="https://www.homedepot.com/services/" titleCopy="Thank you for scheduling your flooring measure" phoneNum="\{!relatedTo.PhoneNumber__c\}" imgPathFull="\{!$Label.CX_LibraryWelcomeHeroD\}" imgPathMobile="\{!$Label.CX_LibraryWelcomeHeroM\}" ></c:pvfc_Header_01>\
 \
 <c:pvfc_Greeting_01 custFirstName="\{!relatedTo.FirstName__c\}" greetingsCopy="We're excited to help with your new floors. Your in-home flooring measure appointment is scheduled."></c:pvfc_Greeting_01>\
 \

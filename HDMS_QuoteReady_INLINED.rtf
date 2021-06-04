@@ -7,7 +7,7 @@
 \pard\pardeftab720\partightenfactor0
 
 \f0\fs24 \cf2 \cb3 \expnd0\expndtw0\kerning0
-<messaging:emailTemplate subject="\{!relatedTo.AltRefUrl__c\}"  relatedToType="hms_EmailData__c"><!-- recipientType="Lead" -->\
+<messaging:emailTemplate subject="\{!relatedTo.Title__c\}"  relatedToType="hms_EmailData__c"><!-- recipientType="Lead" -->\
  <messaging:htmlEmailBody >\
 \
 <html lang="en" xmlns="http://www.w3.org/1999/xhtml" xmlns:v="urn:schemas-microsoft-com:vml" xmlns:o="urn:schemas-microsoft-com:office:office">\
@@ -40,9 +40,9 @@ body, table, td, th, .btn-text \{font-family: Helvetica, Arial, sans-serif !impo
             <td id="all">\
 <!-- @begin email body interior -->\
 \
-<c:pvfc_Header_01 logoLink="https://www.homedepot.com/services/" titleCopy="Time to get your flooring installation quote!" phoneNum="\{!relatedTo.PhoneNumber__c\}" imgPathFull="http://www.praxxgray.com/thd/hdms/components/images/VF_hero_quote_ready_d.png" imgPathMobile="http://www.praxxgray.com/thd/hdms/components/images/VF_hero_quote_ready_m.png" ></c:pvfc_Header_01>\
+<c:pvfc_Header_01 logoLink="https://www.homedepot.com/services/" titleCopy="Time to get your flooring installation quote!" phoneNum="\{!relatedTo.PhoneNumber__c\}" imgPathFull="\{!$Label.CX_LibraryQuoteReadyD\}" imgPathMobile="\{!$Label.CX_LibraryQuoteReadyM\}" ></c:pvfc_Header_01>\
 <!-- \{!$Label.CX_LibraryQuoteReadyD\} \{!$Label.CX_LibraryQuoteReadyM\} -->\
-<c:pvfc_Greeting_01 custFirstName="\{!relatedTo.FirstName__c\}" greetingsCopy="We&rsquo;re exceited to provide a quote for your flooring project. Give us a call at the number below to get your quote!"></c:pvfc_Greeting_01>\
+<c:pvfc_Greeting_01 custFirstName="\{!relatedTo.FirstName__c\}" greetingsCopy="We&rsquo;re excited to provide a quote for your flooring project. Give us a call at the number below to get your quote!"></c:pvfc_Greeting_01>\
 \
 <c:pvfc_ReceiveQuote_02 iconURL="\{!$Label.CX_LibraryPhoneIcon_v2\}" phoneNumber="\{!$Label.HDMSSupportPhoneNumber\}" hero1URL="\{!$Label.CX_LibraryReceiveQuoteHero\}" hero1ALT="Carpet" ></c:pvfc_ReceiveQuote_02>\
 \
